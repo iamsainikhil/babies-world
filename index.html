@@ -1,19 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
   <head id="top-section">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- These meta tags come first. -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Chrome, Firefox OS and Opera -->
-<meta name="theme-color" content="#4285f4">
+<meta name="theme-color" content="#F45E04">
 <!-- Windows Phone -->
-<meta name="msapplication-navbutton-color" content="#4285f4">
+<meta name="msapplication-navbutton-color" content="#cb2027">
 <!-- iOS Safari -->
 <meta name="apple-mobile-web-app-status-bar-style" content="#4285f4">
 <link rel="icon" sizes="192x192" href="photos/baby-logo.jpg">
 
-    <title>Babies World</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="apple-mobile-web-app-title" content="Add to Home">
+<link rel="shortcut icon" sizes="16x16" href="pictures/UC_Blackboard_Logo.png">
+<link rel="shortcut icon" sizes="196x196" href="pictures/UC_Blackboard_Logo.png">
+<link rel="apple-touch-icon-precomposed" href="pictures/UC_Blackboard_Logo.png">
+
+<link rel="stylesheet" type="text/css" href="addtohomescreen.css">
+<script src="addtohomescreen.js"></script>
+<script>
+var a = addToHomescreen({
+	onAdd: function () {
+		alert('Welcome to the homescreen!');
+	}
+});
+</script>
+
+    <title>Baby Aarohi</title>
 
     <!-- Include the CSS -->
 	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
@@ -33,7 +52,17 @@
 
       <link href="../assets/css/docs.css" rel="stylesheet">
 	<link href="style.css" rel="stylesheet">
-
+	<!-- Hotjar Tracking Code for www.metechgeek.ezyro.com -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:446112,hjsv:5};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
   </head>
   <body>
 
@@ -53,22 +82,27 @@
       <div class="navbar-collapse collapse" id="navbar-collapse-com">
         <ul class="nav navbar-nav navbar-right">
           <li class="active"><a href="#shop" style="color:black;font-family:'Raleway'"><i class="fa fa-shopping-bag" aria-hidden="true"></i>&nbsp;Shop</a></li>
+          <li><a href="#gifts" style="color:black;font-family:'Raleway'"><i class="fa fa-gift" aria-hidden="true" style="font-size:19px;"></i>&nbsp;Gifts</a></li>
           <li><a href="#media" style="color:black;font-family:'Raleway'"><i class="fa fa-camera" aria-hidden="true"></i>&nbsp;Media</a></li>
-          <li><a href="#gifts" style="color:black;font-family:'Raleway'"><i class="fa fa-gift" aria-hidden="true"style="font-size:19px;"></i>&nbsp;Gifts</a></li>
-		  <li><a href="#services" style="color:black;font-family:'Raleway'"><span class="icon icon-tools"></span>&nbsp;Services</a></li>
+         <li><a href="#services" style="color:black;font-family:'Raleway'"><span class="icon icon-tools"></span>&nbsp;Services</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-<div class="block block-inverse text-center" id="title-block-me">
+
+	<div class="block block-inverse text-center" id="background-me" >
   <div class="block-foreground" id="block_me">
     <h1 class="block-title">Babies World</h1>
     <h4 class="text-muted hidden-sm-down">Shop | &nbsp;Gifts | &nbsp;Media | &nbsp;Services</h4>
     <a href="#explore"><button class="btn btn-default btn-outline m-t" style="color:#007bb5;">EXPLORE</button></a>
   </div>
   <div class="block-background">
-  <img src="photos/babies-world.jpg" alt="&copy;All rights reserved by Rik O'Hare LRPS" style="width:100%;height:100%;"/>
+    <!--<video class="video-banner" autoplay loop>
+  <source src="Love-Coding.mp4" type="video/mp4">
+  </video>
+  <iframe src="https://player.vimeo.com/video/19815409" width="100%" height="auto" frameborder="0" autoplay webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
+  <img src="photos/babies-world.jpg" alt="&copy;All rights reserved by Rik O'Hare LRPS" style="width:100%;height:100%"/>
   </div>
 </div>
 
@@ -155,7 +189,8 @@
 
         <li>
           <div class="featured-list-icon">
-            <a href="http://www.toysrus.com/category/index.jsp?categoryId=2273443&ab=BRU_Header:Utility3:See-All-Categories:Home-Page"target="_blank"><span><img src="photos/toys-r-us.png" style="width:42px;height:50px;"/></span></a>
+            <a href="http://www.toysrus.com/category/index.jsp?categoryId=2273443&ab=BRU_Header:Utility3:See-All-Categories:Home-Page"target="_blank"><span><img src="photos/toys-r-us.png" style="width:42px;height:50px;"/></span>
+            </a>
           </div>
           <h3>Babies R Us</h3>
           <p>
@@ -247,6 +282,7 @@
           <h3>The Land of Nod</h3>
           <p>
            This site got some seriously fun, unique personalized stuff! If you're searching for a kids holiday or birthday gift, you've come to the right place. You can shop by age or shop by price.
+            </p>
         </li><br/>
         <li>
           <div class="featured-list-icon">
@@ -296,13 +332,13 @@
 
 	  <div class="col-sm-6 col-md-4">
 	  <div class="thumbnail">
-      <img data-action="zoom" style="width: auto;height:auto;" src="https://image.freepik.com/free-photo/nurseling-fur-lovely-blanket-small_1304-1093.jpg"/>
+      <img data-action="zoom" style="width: 100%;height:300px;" src="https://image.freepik.com/free-photo/nurseling-fur-lovely-blanket-small_1304-1093.jpg"/>
 	  </div>
 	</div>
 
 	  <div class="col-sm-6 col-md-4">
 	   <div class="thumbnail">
-	  <img data-action="zoom" style="width: auto;height:auto;" src="https://image.freepik.com/free-photo/focus-purity-indoors-closeup-napping_1304-859.jpg">
+	  <img data-action="zoom" style="width:100%;height:300px;" src="https://image.freepik.com/free-photo/focus-purity-indoors-closeup-napping_1304-859.jpg">
 	  </div>
 	  </div>
   </div>
@@ -330,7 +366,7 @@
       </div>
       <div class="col-sm-4 p-x-md m-b-lg">
         <a href="https://www.humana.com/health-wellness/family-and-relationships/parenting" target="_blank"><img class="m-b" src="photos/child-care.jpg"></a>
-        <p><strong>Parenting & Child care.</strong>&nbsp;We believe that all Americans deserve affordable, quality healthcare coverage.<p>
+          <p><strong>Parenting &amp; Child care.</strong>&nbsp;We believe that all Americans deserve affordable, quality healthcare coverage.</p>p>
       </div>
     </div>
 
@@ -365,20 +401,20 @@
       </div>
       <div class="col-sm-3 m-b-md">
         <ul class="list-unstyled list-spaced" style="float:center;">
-          <li><h6 class="text-uppercase"><a href="https://www.linkedin.com/in/sainikhil12" target="_blank">Developer</a></h6></li>
-          <li><i class="fa fa-"></i>Disclaimer</li>
+          <li><h6 class="text-uppercase"><a href="https://www.linkedin.com/in/sainikhil12" target="_blank"><i class="fa fa-linkedin-square"></i>&nbsp;Developer</a></h6></li>
           <li><a href="mailto:info@metechgeek.ezyro.com" target="_blank"><i class="fa fa-envelope"></i>&nbsp;Email</a></li>
-		   <li class="text-muted"><a href="#" target="_blank"><i class="fa fa-archive"></i>&nbsp;Archives</a></li>
-          <li><i class="fa fa-map"></i>&nbsp;Sitemap</li>
-		  <li><a tabindex="0" href="#" rel="popover" data-popover-content="#myPopover"  data-trigger="focus" ><i class="fa fa-archive"></i>&nbsp;Archives</a></li>
+          <li><a href="https://insights.hotjar.com/h?site=446112&heatmap=1256829&token=ecd02b5e02e9126ae5580d6bec756c5b" target="_blank">
+<i class="fa fa-thermometer"></i><i class="fa fa-map-marker"></i>&nbsp;Heatmap</a></li>
+          <li><a tabindex="0" href="#" rel="popover" data-popover-content="#myPopover"  data-trigger="focus" ><i class="fa fa-archive"></i>&nbsp;Archives</a></li>
 		  <div id="myPopover" class="hide">
-	<h3 style="letter-spacing:2px;text-align:center;">Archives</h3>
+	<h3 style="letter-spacing:2px;text-align:center;float:top;background-color:red;color:black;">ARCHIVES</h3>
 	<ul>
-		<li><a href="Archive1.html" target="_blank">Archive &nbsp;1</a></li>
+		<li><button type="button" class="btn btn-xs btn-pill btn-info"><a href="Archive1.html" target="_blank" style="text-decoration:none">ARCHIVE&nbsp;1</a></button></li>
 	</ul>
-	<p style="font-family:'Libre Baskerville';text-align:center;float:bottom">Click on above links to view older versions of the website</p>
+      <p style="font-family:'Libre Baskerville';text-align:center;float:bottom;">Click on above links to view older versions of the website</p>
 </div>
-        </ul>
+  <li><a href="https://www.xml-sitemaps.com/download/babiesworld.1844783/sitemap.xml?view=1" target="_blank"><i class="fa fa-map"></i>&nbsp;Sitemap</a></li>
+  </ul>
       </div><br/>
 	  <div class= "col-sm-3 m-b-md">
 	   <p style="text-align:center;font-family:'Fira Sans';float:right;">&copy;2017 &nbsp;Babies &nbsp;World </p>
@@ -388,9 +424,21 @@
 </div>
 </div>
 
- <div class="footer footer-me">
- <button type="button" class="btn btn-sm btn-pill btn-danger"><a tabindex="0" href="#" rel="popover" data-popover-content="#myPopover"  data-placement="top" data-trigger="focus" ><i class="fa fa-archive"></i>&nbsp;Archives</a></button>
+ <div class="footer footer-me" style="text-align:center;justify-content:center;">
+<!-- Trigger/Open The Modal -->
+<h3><button  class="btn btn-xs btn-pill btn-danger" href="#" rel="popover" data-popover-content="#mePopover"  data-placement="top" data-trigger="focus"
+style="text-align:center;font-family:'Raleway'"><i class="fa fa-exclamation-triangle"></i>&nbsp;DISCLAIMER</button></h3>
+<div id="mePopover" class="hide">
+	<h3 style="letter-spacing:2px;text-align:center;float:top;background-color:red;">LEGAL</h3>
+	<p style="font-family:'Libre Baskerville';text-align:center;">All the Images, Icons on the website are clickable and open the link in new window.</p>
+        <p  style="font-family:'Libre Baskerville';text-align:center;">All the Images shown are owned by &copy;2017 &nbsp;Freepik.com.
+All the Logos, Icons belong to their respective copyright owners.</p>
+<p  style="font-family:'Libre Baskerville';text-align:center;">All product and company names are trademarks™ or registered® trademarks of their respective holders. Use of them does not imply any affiliation with or endorsement by us.</p><br/>
+      <h3 style="text-align:center;float:bottom;background-color:black;"><a href="mailto:reply@metechgeek.ezyro.com" target="_blank"><button type="button" class="btn btn-xs btn-pill btn-success"><span class="icon icon-mail"></span>&nbsp;CONTACT</button></a></h3>
+</div>
+
  <p style="text-align:center;font-family:'Fira Sans';color:white;background-color:black">&copy;2017 &nbsp;Babies &nbsp;World </p>
+</div>
 
 
     <!-- Include jQuery (required) and the JS -->
@@ -400,8 +448,8 @@
     <script src="../assets/js/toolkit.js"></script>
     <script src="../assets/js/application.js"></script>
 	<script src="scrolltop.js"></script>
-	<script>
-	$(function(){
+<script>
+$(function(){
     $('[rel="popover"]').popover({
         container: 'body',
         html: true,
@@ -416,69 +464,8 @@
 $('.popover-dismiss').popover({
   trigger: 'focus'
 })
-	</script>
-	<script>
-	var clicks = 14;
-
-document.getElementById("clicks").innerHTML = clicks;
-
-$('.like-counter').click(function() {
-  clicks += 1;
-  document.getElementById("clicks").innerHTML = clicks;
-  $('.like-counter').addClass("liked");
-});
 </script>
+
   </body>
 </html>
-
-<!-- The Modal
-<div id="myModal" class="modal">
-
-  <!-- Modal content
-  <div class="modal-content">
-    <div class="modal-header">
-      <span class="close">&times;</span>
-      <h3 style="letter-spacing:2px;">LEGAL</h3>
-    </div>
-    <div class="modal-body">
-      <p>All the Images, Icons on the website are clickable and open the link in new window.</p>
-      <p>All the Images shown are owned by &copy;2017 &nbsp;Freepik.com</p>
-    </div>
-    <div class="modal-footer" style="text-align:center;justify-content:center;">
-      <p  style="text-align:center;font-family:'Fira Sans';color:black" >All Rights Reserved. Babies World <p>
-     <h3><a href="mailto:reply@metechgeek.ezyro.com" target="_blank"><button type="button" class="btn btn-xs btn-pill btn-success"><span class="icon icon-mail"></span>&nbsp;CONTACT</button></a></h3>
-    </div>
-  </div>
-
-</div>
-<script>
-// Get the modal
-var modal = document.getElementById('myModal');
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal
-btn.onclick = function() {
-    modal.style.display = "block";
-
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-
-    }
-}
-</script> -->
 
